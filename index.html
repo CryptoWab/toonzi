@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ============================================ -->
+    <!-- GOOGLE ANALYTICS (GA4)                       -->
+    <!-- ============================================ -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0MFQP2Y9SX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0MFQP2Y9SX');
+    </script>
+
+    <!-- ============================================ -->
+    <!-- BASIC META TAGS                              -->
+    <!-- ============================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>TOONZI TOOLS - 50+ Free Online Tools | AI, Text, SEO, Image Tools</title>
+    <meta name="description" content="Access 50+ free online tools at TOONZI TOOLS. AI Bio Generator, Text Case Converter, Word Counter, SEO Tools, Image Tools & more. No signup required.">
+    <meta name="keywords" content="free online tools, AI tools, text tools, SEO tools, image tools, developer tools, social media tools, bio generator, case converter, word counter, hashtag generator">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="TOONZI TOOLS">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <link rel="canonical" href="https://toonzi.xyz/">
+
+    <!-- ============================================ -->
+    <!-- OPEN GRAPH (Facebook, LinkedIn, WhatsApp)    -->
+    <!-- ============================================ -->
+    <meta property="og:title" content="TOONZI TOOLS - 50+ Free Online Tools">
+    <meta property="og:description" content="Free online tools: AI Bio Generator, Text Case Converter, Word Counter, SEO Tools, Image Tools & more. No signup required!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://toonzi.xyz/">
+    <meta property="og:image" content="https://toonzi.xyz/og-image.jpg">
+    <meta property="og:site_name" content="TOONZI TOOLS">
+    <meta property="og:locale" content="en_US">
+
+    <!-- ============================================ -->
+    <!-- TWITTER CARD                                 -->
+    <!-- ============================================ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TOONZI TOOLS - 50+ Free Online Tools">
+    <meta name="twitter:description" content="Free online tools: AI Bio Generator, Text Case Converter, Word Counter & more. No signup required!">
+    <meta name="twitter:image" content="https://toonzi.xyz/og-image.jpg">
+    <meta name="twitter:site" content="@toonzitools">
+
+    <!-- ============================================ -->
+    <!-- SCHEMA MARKUP (Structured Data)              -->
+    <!-- ============================================ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "TOONZI TOOLS",
+        "url": "https://toonzi.xyz/",
+        "description": "Free online tools for AI, Text, SEO, Image, Developer & Social Media",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://toonzi.xyz/?search={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "TOONZI TOOLS",
+        "url": "https://toonzi.xyz/",
+        "logo": "https://toonzi.xyz/logo.png",
+        "description": "Free online tools platform offering 50+ tools for AI, Text, SEO, Image, Developer & Social Media",
+        "sameAs": [
+            "https://www.instagram.com/toonzi.xyz",
+            "https://www.youtube.com/@toonzitools"
+        ]
+    }
+    </script>
+
+    <!-- ============================================ -->
+    <!-- FAVICON                                      -->
+    <!-- ============================================ -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- ============================================ -->
+    <!-- FONT AWESOME                                 -->
+    <!-- ============================================ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* ============================================ */
+        /* RESET & BASICS                              */
+        /* ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #f0f2f5;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+            padding-bottom: 120px;
+            min-height: 100vh;
+        }
+        a { text-decoration: none; color: inherit; }
+
+        /* ============================================ */
+        /* HEADER                                       */
+        /* ============================================ */
+        header {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            padding: 18px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .menu-icon { 
+            font-size: 24px; 
+            cursor: pointer; 
+            transition: 0.3s; 
+            width: 35px;
+            padding: 5px 0;
+        }
+        .menu-icon:hover { color: #ffcc00; }
+        
+        .site-title {
+            font-family: 'Impact', sans-serif;
+            font-size: 28px;
+            letter-spacing: 2px;
+            color: #fff;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .site-title span { color: #ffcc00; }
+        .site-title .sub-text {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 11px;
+            letter-spacing: 3px;
+            opacity: 0.6;
+            font-weight: 300;
+            display: block;
+            text-align: center;
+            margin-top: -2px;
+        }
+        .search-icon { 
+            font-size: 20px; 
+            cursor: pointer; 
+            transition: 0.3s; 
+            width: 35px; 
+            text-align: right;
+            padding: 5px 0;
+        }
+        .search-icon:hover { color: #ffcc00; }
+
+        /* ============================================ */
+        /* SEARCH BAR                                   */
+        /* ============================================ */
+        .search-slide {
+            position: sticky;
+            top: 75px;
+            width: 100%;
+            background: #fff;
+            padding: 18px 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            z-index: 998;
+            display: none;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        .search-slide.active { display: flex; }
+        .search-slide input {
+            flex: 1;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            outline: none;
+            transition: 0.3s;
+            background: #f8f9fa;
+        }
+        .search-slide input:focus {
+            border-color: #302b63;
+            background: #fff;
+            box-shadow: 0 0 0 4px rgba(48, 43, 99, 0.1);
+        }
+        .search-slide .close-search-btn {
+            font-size: 28px;
+            color: #888;
+            cursor: pointer;
+            padding: 5px 12px;
+            transition: 0.3s;
+            border-radius: 50%;
+        }
+        .search-slide .close-search-btn:hover { 
+            color: #ff0000; 
+            background: #f0f0f0;
+        }
+
+        /* ============================================ */
+        /* SIDEBAR                                      */
+        /* ============================================ */
+        .sidebar {
+            position: fixed; 
+            top: 0; 
+            left: -300px; 
+            width: 300px; 
+            height: 100%;
+            background: #1a1a2e; 
+            color: #fff; 
+            transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            padding-top: 70px; 
+            z-index: 2000; 
+            box-shadow: 4px 0 30px rgba(0,0,0,0.4); 
+            overflow-y: auto;
+        }
+        .sidebar.active { left: 0; }
+        .sidebar .close-btn { 
+            position: absolute; 
+            top: 18px; 
+            right: 22px; 
+            font-size: 30px; 
+            cursor: pointer; 
+            color: #ffcc00;
+            transition: 0.3s;
+        }
+        .sidebar .close-btn:hover { transform: rotate(90deg); }
+        
+        .sidebar .sidebar-logo {
+            text-align: center;
+            padding: 10px 0 25px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            margin: 0 25px 15px;
+        }
+        .sidebar .sidebar-logo h2 {
+            font-family: 'Impact', sans-serif;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+        .sidebar .sidebar-logo h2 span { color: #ffcc00; }
+        .sidebar .sidebar-logo p {
+            font-size: 12px;
+            color: #888;
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+        
+        .sidebar a {
+            padding: 14px 30px;
+            text-decoration: none;
+            font-size: 15px;
+            color: #bbb;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            transition: 0.3s;
+            border-left: 4px solid transparent;
+        }
+        .sidebar a i {
+            width: 22px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .sidebar a:hover { 
+            color: #fff; 
+            background-color: rgba(255, 204, 0, 0.08); 
+            border-left: 4px solid #ffcc00; 
+        }
+        .sidebar .divider {
+            border-top: 1px solid rgba(255,255,255,0.05);
+            margin: 10px 25px;
+        }
+
+        /* ============================================ */
+        /* HERO SECTION                                 */
+        /* ============================================ */
+        .hero {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            padding: 70px 20px 50px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: -50px;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 204, 0, 0.05);
+            border-radius: 50%;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -80px;
+            right: -80px;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 204, 0, 0.03);
+            border-radius: 50%;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 span { color: #ffcc00; }
+        .hero p {
+            font-size: 18px;
+            opacity: 0.8;
+            max-width: 550px;
+            margin: 0 auto 30px;
+            position: relative;
+            z-index: 1;
+            line-height: 1.6;
+        }
+        .hero .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            position: relative;
+            z-index: 1;
+            flex-wrap: wrap;
+        }
+        .hero .hero-stats .stat {
+            text-align: center;
+        }
+        .hero .hero-stats .stat h3 {
+            font-size: 28px;
+            color: #ffcc00;
+        }
+        .hero .hero-stats .stat p {
+            font-size: 13px;
+            opacity: 0.6;
+            margin: 0;
+        }
+
+        /* ============================================ */
+        /* TOOLS GRID                                   */
+        /* ============================================ */
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 30px 20px 20px;
+        }
+        
+        .tools-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+            gap: 25px; 
+            margin-top: 10px;
+        }
+        .tool-card { 
+            background: #fff; 
+            border-radius: 16px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06); 
+            transition: all 0.3s ease; 
+            cursor: pointer; 
+            position: relative;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+        .tool-card:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 12px 40px rgba(48, 43, 99, 0.12); 
+            border-color: #302b63;
+        }
+        .tool-icon-container { 
+            width: 100%; 
+            height: 180px; 
+            background: linear-gradient(135deg, #0f0c29, #302b63);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transition: 0.3s;
+        }
+        .tool-card:hover .tool-icon-container {
+            background: linear-gradient(135deg, #1a1735, #3d3680);
+        }
+        .tool-icon-container i {
+            font-size: 56px;
+            color: #ffcc00;
+            opacity: 0.9;
+            transition: 0.3s;
+        }
+        .tool-card:hover .tool-icon-container i {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+        .tool-icon-container .badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: #ff4444;
+            color: #fff;
+            font-size: 10px;
+            padding: 3px 14px;
+            border-radius: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 10px rgba(255, 68, 68, 0.3);
+        }
+        .tool-icon-container .badge.new {
+            background: #00c851;
+            box-shadow: 0 2px 10px rgba(0, 200, 81, 0.3);
+        }
+        .tool-info { 
+            padding: 16px 18px 18px;
+            text-align: center; 
+        }
+        .tool-info h3 { 
+            font-size: 16px; 
+            font-weight: 600; 
+            color: #1a1a2e;
+            margin-bottom: 4px;
+        }
+        .tool-info .tool-category {
+            font-size: 12px;
+            color: #999;
+            letter-spacing: 0.5px;
+        }
+        .tool-info .use-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 20px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #302b63;
+            border: 2px solid #302b63;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+        .tool-card:hover .use-btn {
+            background: #302b63;
+            color: #fff;
+        }
+
+        /* ============================================ */
+        /* NO DATA                                      */
+        /* ============================================ */
+        .no-data-message { 
+            grid-column: 1 / -1; 
+            text-align: center; 
+            padding: 80px 20px; 
+            background: #fff; 
+            border-radius: 16px; 
+            border: 2px dashed #ddd; 
+            color: #888; 
+            font-size: 18px; 
+            font-weight: 500;
+        }
+        .no-data-message i { 
+            font-size: 48px; 
+            color: #ccc; 
+            display: block; 
+            margin-bottom: 15px; 
+        }
+
+        /* ============================================ */
+        /* FOOTER                                       */
+        /* ============================================ */
+        footer { 
+            position: fixed; 
+            bottom: 0; 
+            left: 0; 
+            width: 100%; 
+            background: #0f0c29; 
+            color: #ccc; 
+            text-align: center; 
+            padding: 14px 20px; 
+            border-top: 3px solid #ffcc00; 
+            z-index: 999; 
+            font-size: 13px; 
+            line-height: 1.6;
+        }
+        footer .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        footer .footer-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        footer .footer-links a {
+            color: #ccc;
+            font-size: 13px;
+            transition: 0.3s;
+            padding: 4px 12px;
+            border-radius: 4px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        footer .footer-links a:hover {
+            color: #ffcc00;
+            border-color: #ffcc00;
+            background: rgba(255, 204, 0, 0.05);
+        }
+        footer .copyright {
+            color: #888;
+            font-size: 12px;
+        }
+        footer .copyright a {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+
+        /* ============================================ */
+        /* THEME TOGGLE                                 */
+        /* ============================================ */
+        .theme-toggle { 
+            position: fixed; 
+            bottom: 100px; 
+            right: 25px; 
+            background: #302b63; 
+            color: white; 
+            width: 50px; 
+            height: 50px; 
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 22px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.25); 
+            cursor: pointer; 
+            z-index: 1000; 
+            transition: 0.3s; 
+            border: 2px solid rgba(255,255,255,0.1);
+        }
+        .theme-toggle:hover { 
+            transform: scale(1.1); 
+            background: #ffcc00; 
+            color: #333; 
+            border-color: #ffcc00;
+        }
+
+        /* ============================================ */
+        /* DARK MODE                                    */
+        /* ============================================ */
+        body.dark-mode { 
+            background-color: #121212; 
+            color: #e0e0e0; 
+        }
+        body.dark-mode header { 
+            background: linear-gradient(135deg, #1a1a2e, #2a2a4e); 
+        }
+        body.dark-mode .sidebar { 
+            background: #1a1a2e; 
+        }
+        body.dark-mode .tool-card { 
+            background: #1e1e2e; 
+            border-color: #2a2a3e;
+        }
+        body.dark-mode .tool-info h3 { 
+            color: #fff; 
+        }
+        body.dark-mode .tool-info .tool-category { 
+            color: #888; 
+        }
+        body.dark-mode .theme-toggle { 
+            background: #333; 
+            color: #ffcc00; 
+            border-color: #555;
+        }
+        body.dark-mode footer { 
+            background: #1a1a2e; 
+            border-top: 3px solid #444; 
+        }
+        body.dark-mode .tool-icon-container { 
+            background: linear-gradient(135deg, #1a1a2e, #2a2a4e); 
+        }
+        body.dark-mode .tool-card:hover .tool-icon-container {
+            background: linear-gradient(135deg, #252545, #3a3a6a);
+        }
+        body.dark-mode .no-data-message { 
+            background: #1e1e2e; 
+            border-color: #333; 
+            color: #aaa; 
+        }
+        body.dark-mode .no-data-message i { 
+            color: #555; 
+        }
+        body.dark-mode .search-slide { 
+            background: #1a1a2e; 
+            border-bottom: 1px solid #333; 
+        }
+        body.dark-mode .search-slide input { 
+            background: #2a2a3e; 
+            color: #fff; 
+            border-color: #444; 
+        }
+        body.dark-mode .search-slide input:focus {
+            border-color: #ffcc00;
+            background: #2a2a3e;
+        }
+        body.dark-mode .search-slide .close-search-btn { 
+            color: #888; 
+        }
+        body.dark-mode .search-slide .close-search-btn:hover { 
+            color: #ff5555; 
+            background: rgba(255,0,0,0.1);
+        }
+        body.dark-mode .hero {
+            background: linear-gradient(135deg, #1a1a2e, #2a2a4e, #1a1a2e);
+        }
+        body.dark-mode footer .footer-links a {
+            border-color: rgba(255,255,255,0.05);
+        }
+        body.dark-mode footer .footer-links a:hover {
+            border-color: #ffcc00;
+        }
+        body.dark-mode .tool-card .use-btn {
+            border-color: #ffcc00;
+            color: #ffcc00;
+        }
+        body.dark-mode .tool-card:hover .use-btn {
+            background: #ffcc00;
+            color: #1a1a2e;
+        }
+
+        /* ============================================ */
+        /* RESPONSIVE                                   */
+        /* ============================================ */
+        @media (max-width: 768px) {
+            .site-title { font-size: 22px; }
+            .site-title .sub-text { font-size: 9px; }
+            .hero h1 { font-size: 32px; }
+            .hero p { font-size: 15px; }
+            .hero .hero-stats { gap: 25px; }
+            .hero .hero-stats .stat h3 { font-size: 22px; }
+            
+            .tools-grid { 
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); 
+                gap: 15px;
+            }
+            .tool-icon-container { height: 140px; }
+            .tool-icon-container i { font-size: 40px; }
+            .tool-info h3 { font-size: 14px; }
+            
+            footer .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            footer .footer-links {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tools-grid { 
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); 
+                gap: 12px;
+            }
+            .tool-icon-container { height: 110px; }
+            .tool-icon-container i { font-size: 32px; }
+            .tool-info { padding: 12px 12px 14px; }
+            .tool-info h3 { font-size: 13px; }
+            .tool-info .tool-category { font-size: 10px; }
+            .hero h1 { font-size: 26px; }
+            .hero { padding: 40px 15px 30px; }
+            .container { padding: 15px 12px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========================================== -->
+    <!-- HEADER                                     -->
+    <!-- ========================================== -->
+    <header>
+        <div class="menu-icon" onclick="toggleSidebar()" aria-label="Menu"><i class="fas fa-bars"></i></div>
+        <div class="site-title">
+            TOON<span>ZI</span>
+            <span class="sub-text">TOOLS</span>
+        </div>
+        <div class="search-icon" onclick="toggleSearch()" aria-label="Search"><i class="fas fa-search"></i></div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- SEARCH SLIDE                               -->
+    <!-- ========================================== -->
+    <div id="searchSlide" class="search-slide">
+        <input type="text" id="searchInput" placeholder="Search 50+ free tools by name..." onkeyup="handleSearch()" aria-label="Search tools">
+        <span class="close-search-btn" onclick="toggleSearch()" aria-label="Close search">&times;</span>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- SIDEBAR                                    -->
+    <!-- ========================================== -->
+    <div id="mySidebar" class="sidebar" role="navigation" aria-label="Main navigation">
+        <span class="close-btn" onclick="toggleSidebar()" aria-label="Close menu">&times;</span>
+        <div class="sidebar-logo">
+            <h2>TOON<span>ZI</span></h2>
+            <p>FREE ONLINE TOOLS</p>
+        </div>
+        
+        <a href="terms-and-condition.html"><i class="fas fa-file-contract"></i> Terms & Condition</a>
+        <a href="privacy-policy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- HERO SECTION                               -->
+    <!-- ========================================== -->
+    <section class="hero">
+        <h1>All-in-One <span>Tools Hub</span></h1>
+        <p>50+ free online tools for AI, Text, SEO, Image, Developer & Social Media. No signup required.</p>
+        <div class="hero-stats">
+            <div class="stat">
+                <h3 id="totalTools">50+</h3>
+                <p>Free Tools</p>
+            </div>
+            <div class="stat">
+                <h3>100%</h3>
+                <p>Free to Use</p>
+            </div>
+            <div class="stat">
+                <h3>No</h3>
+                <p>Signup Required</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- MAIN CONTENT                               -->
+    <!-- ========================================== -->
+    <main>
+        <div class="container">
+            <div class="tools-grid" id="toolsGridContainer">
+                <div class="no-data-message" id="loadingMsg">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    Loading 50+ Free Tools...
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                     -->
+    <!-- ========================================== -->
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                &copy; 2012-2025 <a href="https://toonzi.xyz">TOONZI</a>. All Rights Reserved.
+            </div>
+            <div class="footer-links">
+                <a href="terms-and-condition.html"><i class="fas fa-file-contract"></i> Terms</a>
+                <a href="privacy-policy.html"><i class="fas fa-shield-alt"></i> Privacy</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- THEME TOGGLE                               -->
+    <!-- ========================================== -->
+    <div class="theme-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- JAVASCRIPT                                 -->
+    <!-- ========================================== -->
+    <script>
+        // --- GLOBAL VARIABLE ---
+        let toolsData = [];
+
+        // --- 1. FETCH DATA FROM data.json ---
+        async function loadData() {
+            try {
+                const response = await fetch('data.json');
+                if (!response.ok) throw new Error('Data file not found');
+                toolsData = await response.json();
+                renderToolsGrid(toolsData);
+                updateStats(toolsData.length);
+            } catch (error) {
+                console.error('Error loading JSON:', error);
+                const gridContainer = document.getElementById('toolsGridContainer');
+                gridContainer.innerHTML = `
+                    <div class="no-data-message">
+                        <i class="fas fa-folder-open"></i>
+                        No Tools Found
+                    </div>
+                `;
+            }
+        }
+
+        // --- 2. RENDER TOOLS GRID ---
+        function renderToolsGrid(data) {
+            const gridContainer = document.getElementById('toolsGridContainer');
+            gridContainer.innerHTML = ''; 
+            
+            if (!data || data.length === 0) {
+                gridContainer.innerHTML = `
+                    <div class="no-data-message">
+                        <i class="fas fa-search"></i>
+                        No tools found matching your search
+                    </div>
+                `;
+                return;
+            }
+            
+            data.forEach(tool => {
+                const card = document.createElement('div');
+                card.className = 'tool-card';
+                card.onclick = function() { 
+                    if (tool.link) {
+                        window.location.href = tool.link; 
+                    }
+                };
+                
+                let badgeHTML = '';
+                if (tool.hot) {
+                    badgeHTML = `<span class="badge">🔥 Hot</span>`;
+                } else if (tool.new) {
+                    badgeHTML = `<span class="badge new">✨ New</span>`;
+                }
+                
+                const icon = tool.icon || 'fa-wrench';
+                const category = tool.category || 'Tool';
+                const title = tool.title || tool.name || 'Untitled';
+                
+                card.innerHTML = `
+                    <div class="tool-icon-container">
+                        <i class="fas ${icon}"></i>
+                        ${badgeHTML}
+                    </div>
+                    <div class="tool-info">
+                        <h3>${title}</h3>
+                        <div class="tool-category">${category}</div>
+                        <span class="use-btn">Use Tool →</span>
+                    </div>
+                `;
+                gridContainer.appendChild(card);
+            });
+        }
+
+        // --- 3. UPDATE STATS ---
+        function updateStats(count) {
+            const statsEl = document.getElementById('totalTools');
+            if (statsEl) {
+                statsEl.textContent = count + '+';
+            }
+        }
+
+        // --- 4. SEARCH FUNCTION ---
+        function handleSearch() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            
+            if (query === "") { 
+                renderToolsGrid(toolsData); 
+                return; 
+            }
+            
+            const filteredData = toolsData.filter(tool => {
+                const title = (tool.title || tool.name || '').toLowerCase();
+                return title.includes(query);
+            });
+            
+            renderToolsGrid(filteredData);
+        }
+
+        // --- 5. TOGGLE FUNCTIONS ---
+        function toggleSidebar() { 
+            document.getElementById("mySidebar").classList.toggle("active"); 
+        }
+
+        function toggleSearch() {
+            const slide = document.getElementById("searchSlide");
+            slide.classList.toggle("active");
+            if (slide.classList.contains("active")) {
+                setTimeout(() => {
+                    document.getElementById("searchInput").focus();
+                }, 100);
+            } else {
+                document.getElementById("searchInput").value = ""; 
+                handleSearch();
+            }
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+            const icon = document.querySelector(".theme-toggle i");
+            if (document.body.classList.contains("dark-mode")) {
+                icon.classList.remove("fa-moon"); 
+                icon.classList.add("fa-sun");
+            } else {
+                icon.classList.remove("fa-sun"); 
+                icon.classList.add("fa-moon");
+            }
+        }
+
+        // --- 6. CLOSE SIDEBAR ON OUTSIDE CLICK ---
+        document.addEventListener('click', function(e) {
+            const sidebar = document.getElementById('mySidebar');
+            const menuIcon = document.querySelector('.menu-icon');
+            if (sidebar.classList.contains('active') && 
+                !sidebar.contains(e.target) && 
+                !menuIcon.contains(e.target)) {
+                sidebar.classList.remove('active');
+            }
+        });
+
+        // --- 7. KEYBOARD SHORTCUT: Ctrl+K ---
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                e.preventDefault();
+                toggleSearch();
+            }
+            if (e.key === 'Escape') {
+                const slide = document.getElementById('searchSlide');
+                if (slide.classList.contains('active')) {
+                    toggleSearch();
+                }
+            }
+        });
+
+        // --- 8. INIT ---
+        document.addEventListener('DOMContentLoaded', function() {
+            loadData();
+        });
+    </script>
+</body>
+</html>
