@@ -38,6 +38,13 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
+        <url>
+        <loc>https://toonzi.xyz/</loc>
+        <lastmod>2026-06-27</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
         
 
 </urlset>
