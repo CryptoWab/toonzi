@@ -24,6 +24,14 @@
         "new": true
     },
     {
+        "title": "Image Resizer",
+        "category": "Image",
+        "icon": "fa-compress-alt",
+        "link": "image-resizer.html",
+        "hot": true,
+        "new": true
+    },
+    {
         "title": "Fancy Font Generator",
         "category": "Text",
         "icon": "fa-font",
