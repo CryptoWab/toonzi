@@ -40,6 +40,22 @@
         "new": true
     },
     {
+        "title": "Video Compressor",
+        "category": "Video",
+        "icon": "fa-compress-alt",
+        "link": "video-compressor.html",
+        "hot": false,
+        "new": true
+    },
+    {
+        "title": "Video Converter",
+        "category": "Video",
+        "icon": "fa-compress-alt",
+        "link": "video-converter.html",
+        "hot": false,
+        "new": true
+    },
+    {
         "title": "Fancy Font Generator",
         "category": "Text",
         "icon": "fa-font",
