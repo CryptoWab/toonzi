@@ -3,4 +3,4 @@ Allow: /
 Disallow: /search
 Disallow: /admin
 
-Sitemap: https://toonzi.xyz/sitemap.xml
+Sitemap: https://toonzi.xyz/sitemap.txt
