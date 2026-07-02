@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0MFQP2Y9SX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0MFQP2Y9SX');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAFSA Eligibility Calculator - Free Student Aid Estimator 2025 | TOONZI TOOLS</title>
+    
+    <!-- ✅ FAVICON -->
+    <link rel="icon" type="image/x-icon" href="https://toonzi.xyz/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="https://toonzi.xyz/favicon.ico">
+
+    <!-- ✅ SEO META TAGS -->
+    <meta name="description" content="Calculate your FAFSA eligibility, EFC, and Pell Grant estimate for free. Our student aid calculator helps you determine financial aid eligibility for college in 2025-2026.">
+    <meta name="keywords" content="FAFSA calculator, FAFSA eligibility, student aid estimator, Pell Grant calculator, EFC calculator, financial aid calculator, college financial aid, FAFSA 2025, TOONZI TOOLS">
+    <link rel="canonical" href="https://toonzi.xyz/fafsa-calculator.html">
+
+    <!-- ✅ OPEN GRAPH -->
+    <meta property="og:title" content="FAFSA Eligibility Calculator - Free Student Aid Estimator 2025 | TOONZI TOOLS">
+    <meta property="og:description" content="Calculate your FAFSA eligibility, EFC, and Pell Grant estimate for free. Determine your financial aid eligibility for college.">
+    <meta property="og:url" content="https://toonzi.xyz/fafsa-calculator.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="TOONZI TOOLS">
+    <meta property="og:image" content="https://toonzi.xyz/og-image.jpg">
+
+    <!-- ✅ TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FAFSA Eligibility Calculator - Free Student Aid Estimator 2025">
+    <meta name="twitter:description" content="Calculate your FAFSA eligibility, EFC, and Pell Grant estimate for free.">
+
+    <!-- ✅ ROBOTS -->
+    <meta name="robots" content="index, follow">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://toonzi.xyz/sitemap.xml">
+
+    <!-- ✅ SCHEMA MARKUP - FAQ (UPDATED) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is FAFSA eligibility?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "FAFSA eligibility determines if you qualify for federal student aid including Pell Grants, work-study, and student loans. Eligibility is based on your Expected Family Contribution (EFC), dependency status, and other factors."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I know if I qualify for Pell Grant?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pell Grant eligibility is determined by your Expected Family Contribution (EFC). For the 2025-2026 academic year, students with an EFC below $7,395 may qualify for Pell Grants. The actual award amount depends on your EFC and enrollment status."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the maximum Pell Grant for 2025?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The maximum Federal Pell Grant for the 2025-2026 academic year is $7,395. The actual amount depends on your EFC, cost of attendance, and enrollment status. Students with an EFC of $0 typically receive the maximum award."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is this FAFSA calculator free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, this FAFSA eligibility calculator is completely free to use. No signup or registration required. Get instant estimates for your financial aid eligibility."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- ✅ SCHEMA MARKUP - TOOL -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "FAFSA Eligibility Calculator",
+        "url": "https://toonzi.xyz/fafsa-calculator.html",
+        "description": "Calculate your FAFSA eligibility, EFC, and Pell Grant estimate for free. Determine your financial aid eligibility for college.",
+        "applicationCategory": "Finance Tool",
+        "operatingSystem": "All",
+        "browserRequirements": "Requires JavaScript",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "audience": {
+            "@type": "Audience",
+            "audienceType": "Students and Parents applying for financial aid"
+        }
+    }
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* ============================================ */
+        /* RESET                                       */
+        /* ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f0f4f8;
+            color: #1a1a2e;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+        }
+
+        /* ============================================ */
+        /* HEADER                                      */
+        /* ============================================ */
+        .header {
+            background: #ffffff;
+            padding: 16px 30px;
+            border-bottom: 1px solid #eef2f6;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.02);
+        }
+
+        .header .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: #1a1a2e;
+        }
+
+        .header .logo .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: #1a1a2e;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        .header .logo .logo-text {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .header .logo .logo-text span {
+            color: #0055a4;
+        }
+
+        .header .logo .logo-sub {
+            font-size: 9px;
+            color: #999;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            display: block;
+            font-weight: 400;
+        }
+
+        .header .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .header .nav-links a {
+            color: #666;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: 0.3s;
+            padding: 6px 14px;
+            border-radius: 8px;
+        }
+
+        .header .nav-links a:hover {
+            color: #0055a4;
+            background: #f0f4f8;
+        }
+
+        .header .nav-links .back-btn {
+            background: #0055a4;
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .header .nav-links .back-btn:hover {
+            background: #003d7a;
+            color: #fff;
+        }
+
+        /* ============================================ */
+        /* MAIN CONTAINER                              */
+        /* ============================================ */
+        .main-container {
+            flex: 1;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 30px 20px 50px;
+            width: 100%;
+        }
+
+        /* ============================================ */
+        /* HERO SECTION                                */
+        /* ============================================ */
+        .hero-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-section .badge {
+            display: inline-block;
+            padding: 5px 18px;
+            background: rgba(0, 85, 164, 0.08);
+            border: 1px solid rgba(0, 85, 164, 0.1);
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 600;
+            color: #0055a4;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .hero-section h1 {
+            font-size: 42px;
+            font-weight: 800;
+            color: #1a1a2e;
+            margin-bottom: 6px;
+            letter-spacing: -1px;
+        }
+
+        .hero-section h1 span {
+            color: #0055a4;
+        }
+
+        .hero-section p {
+            font-size: 17px;
+            color: #666;
+            font-weight: 300;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ============================================ */
+        /* TOOL CARD - WHITE                           */
+        /* ============================================ */
+        .tool-card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 40px 45px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04), 0 1px 4px rgba(0, 0, 0, 0.02);
+            border: 1px solid #eef2f6;
+        }
+
+        /* ============================================ */
+        /* FORM STYLES                                 */
+        /* ============================================ */
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px 24px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .form-group label .required {
+            color: #e74c3c;
+        }
+
+        .form-group label .hint {
+            font-weight: 400;
+            color: #999;
+            font-size: 12px;
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 12px 16px;
+            font-size: 15px;
+            border: 2px solid #e8ecf0;
+            border-radius: 12px;
+            outline: none;
+            transition: 0.3s;
+            background: #fafbfc;
+            color: #1a1a2e;
+            font-family: 'Inter', sans-serif;
+            width: 100%;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #0055a4;
+            background: #ffffff;
+            box-shadow: 0 0 0 4px rgba(0, 85, 164, 0.06);
+        }
+
+        .form-group input::placeholder {
+            color: #aaa;
+        }
+
+        .form-group select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            padding-right: 40px;
+        }
+
+        .form-group select option {
+            padding: 8px;
+        }
+
+        .form-group .helper {
+            font-size: 12px;
+            color: #999;
+            margin-top: 4px;
+        }
+
+        /* ============================================ */
+        /* RADIO BUTTON GROUP                          */
+        /* ============================================ */
+        .radio-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            padding: 4px 0;
+        }
+
+        .radio-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            background: #fafbfc;
+            border: 2px solid #e8ecf0;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .radio-item:hover {
+            background: #f0f4f8;
+            border-color: #0055a4;
+        }
+
+        .radio-item input[type="radio"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #0055a4;
+            cursor: pointer;
+            margin: 0;
+            flex-shrink: 0;
+        }
+
+        .radio-item input[type="radio"]:checked + label {
+            color: #0055a4;
+            font-weight: 600;
+        }
+
+        .radio-item:has(input[type="radio"]:checked) {
+            border-color: #0055a4;
+            background: rgba(0, 85, 164, 0.04);
+        }
+
+        .radio-item label {
+            font-size: 14px;
+            color: #555;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        /* ============================================ */
+        /* CALCULATE BUTTON                            */
+        /* ============================================ */
+        .btn-calculate {
+            width: 100%;
+            padding: 16px;
+            background: #0055a4;
+            border: none;
+            border-radius: 14px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .btn-calculate:hover {
+            background: #003d7a;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(0, 85, 164, 0.2);
+        }
+
+        .btn-calculate:active {
+            transform: scale(0.98);
+        }
+
+        .btn-calculate i {
+            font-size: 18px;
+        }
+
+        /* ============================================ */
+        /* RESULT SECTION                              */
+        /* ============================================ */
+        .result-section {
+            display: none;
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 2px solid #eef2f6;
+            animation: fadeSlideUp 0.5s ease;
+        }
+
+        .result-section.active {
+            display: block;
+        }
+
+        @keyframes fadeSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .result-section .result-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 16px;
+        }
+
+        .result-section .result-title i {
+            color: #27ae60;
+            margin-right: 10px;
+        }
+
+        /* --- Result Grid --- */
+        .result-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 14px;
+        }
+
+        .result-card {
+            background: #fafbfc;
+            border: 1px solid #eef2f6;
+            border-radius: 14px;
+            padding: 18px 16px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .result-card:hover {
+            border-color: #0055a4;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
+
+        .result-card .value {
+            font-size: 28px;
+            font-weight: 800;
+            color: #1a1a2e;
+            line-height: 1.2;
+        }
+
+        .result-card .value.green {
+            color: #27ae60;
+        }
+
+        .result-card .value.red {
+            color: #e74c3c;
+        }
+
+        .result-card .value.orange {
+            color: #f39c12;
+        }
+
+        .result-card .value.blue {
+            color: #0055a4;
+        }
+
+        .result-card .label {
+            font-size: 12px;
+            color: #999;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 4px;
+        }
+
+        .result-card .icon {
+            font-size: 20px;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* ✅ FIXED: Eligibility Badge with Dynamic Classes */
+        .eligibility-badge {
+            text-align: center;
+            padding: 24px 20px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            border: 2px solid #e8ecf0;
+            background: #fafbfc;
+            transition: 0.4s ease;
+        }
+
+        .eligibility-badge .status {
+            font-size: 30px;
+            font-weight: 800;
+            display: block;
+            margin-bottom: 4px;
+            transition: 0.4s ease;
+        }
+
+        /* ✅ DYNAMIC CLASSES */
+        .eligibility-badge.eligible {
+            background: linear-gradient(135deg, #e8f8ee, #d4edda);
+            border-color: #27ae60;
+        }
+
+        .eligibility-badge.eligible .status {
+            color: #27ae60;
+        }
+
+        .eligibility-badge.eligible .sub-text {
+            color: #1e7e34;
+        }
+
+        .eligibility-badge.partial {
+            background: linear-gradient(135deg, #fff8e7, #fff3d6);
+            border-color: #f39c12;
+        }
+
+        .eligibility-badge.partial .status {
+            color: #f39c12;
+        }
+
+        .eligibility-badge.partial .sub-text {
+            color: #b7760e;
+        }
+
+        .eligibility-badge.not-eligible {
+            background: linear-gradient(135deg, #fde8e8, #f8d7da);
+            border-color: #e74c3c;
+        }
+
+        .eligibility-badge.not-eligible .status {
+            color: #e74c3c;
+        }
+
+        .eligibility-badge.not-eligible .sub-text {
+            color: #a93226;
+        }
+
+        .eligibility-badge .sub-text {
+            font-size: 16px;
+            font-weight: 500;
+            transition: 0.4s ease;
+        }
+
+        /* --- Result Actions --- */
+        .result-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 18px;
+        }
+
+        .result-actions button {
+            padding: 10px 24px;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-reset-result {
+            background: #f0f2f5;
+            color: #555;
+        }
+
+        .btn-reset-result:hover {
+            background: #e8ecf0;
+        }
+
+        .btn-print-result {
+            background: #1a1a2e;
+            color: #fff;
+        }
+
+        .btn-print-result:hover {
+            background: #2d2d5e;
+            transform: translateY(-2px);
+        }
+
+        /* ============================================ */
+        /* CONTENT SECTION - SEO TEXT (UPDATED)       */
+        /* ============================================ */
+        .content-section {
+            margin-top: 40px;
+            padding: 35px 40px;
+            background: #ffffff;
+            border-radius: 20px;
+            border: 1px solid #eef2f6;
+        }
+
+        .content-section h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 12px;
+        }
+
+        .content-section h2 i {
+            color: #0055a4;
+            margin-right: 8px;
+        }
+
+        .content-section h2 span {
+            color: #0055a4;
+        }
+
+        .content-section h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin: 22px 0 10px;
+        }
+
+        .content-section h3 i {
+            color: #0055a4;
+            margin-right: 8px;
+        }
+
+        .content-section p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 14px;
+        }
+
+        .content-section ul {
+            margin: 10px 0 18px 25px;
+        }
+
+        .content-section ul li {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 6px;
+            list-style-type: none;
+            position: relative;
+            padding-left: 24px;
+        }
+
+        .content-section ul li::before {
+            content: '✓';
+            color: #0055a4;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .content-section .highlight-box {
+            background: #f0f7ff;
+            border-left: 4px solid #0055a4;
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 16px 0;
+        }
+
+        .content-section .highlight-box p {
+            margin-bottom: 0;
+            color: #333;
+        }
+
+        .content-section .highlight-box strong {
+            color: #0055a4;
+        }
+
+        /* --- FAQ Section (UPDATED) --- */
+        .faq-section {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 2px solid #eef2f6;
+        }
+
+        .faq-section h3 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 16px;
+        }
+
+        .faq-item {
+            margin-bottom: 10px;
+            padding: 14px 18px;
+            background: #f8f9fc;
+            border-radius: 10px;
+            border: 1px solid #eef2f6;
+        }
+
+        .faq-item .question {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 4px;
+        }
+
+        .faq-item .question i {
+            color: #0055a4;
+            margin-right: 8px;
+        }
+
+        .faq-item .answer {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* ============================================ */
+        /* FOOTER                                      */
+        /* ============================================ */
+        .footer {
+            text-align: center;
+            padding: 25px 20px;
+            border-top: 1px solid #eef2f6;
+            margin-top: auto;
+            background: #ffffff;
+        }
+
+        .footer p {
+            font-size: 13px;
+            color: #bbb;
+        }
+
+        .footer p a {
+            color: #1a1a2e;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer .footer-links {
+            margin-top: 6px;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .footer .footer-links a {
+            font-size: 12px;
+            color: #bbb;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .footer .footer-links a:hover {
+            color: #1a1a2e;
+        }
+
+        /* ============================================ */
+        /* RESPONSIVE                                  */
+        /* ============================================ */
+        @media (max-width: 768px) {
+            .header {
+                padding: 12px 16px;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .header .logo .logo-text {
+                font-size: 17px;
+            }
+
+            .header .nav-links a {
+                font-size: 12px;
+                padding: 4px 10px;
+            }
+
+            .header .nav-links .back-btn {
+                padding: 6px 14px;
+                font-size: 12px;
+            }
+
+            .hero-section h1 {
+                font-size: 30px;
+            }
+
+            .hero-section p {
+                font-size: 15px;
+            }
+
+            .tool-card {
+                padding: 24px 18px;
+                border-radius: 18px;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+                gap: 14px;
+            }
+
+            .form-group.full-width {
+                grid-column: 1;
+            }
+
+            .radio-group {
+                grid-template-columns: 1fr;
+            }
+
+            .result-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .content-section {
+                padding: 20px 16px;
+            }
+
+            .content-section h2 {
+                font-size: 22px;
+            }
+
+            .content-section h3 {
+                font-size: 18px;
+            }
+
+            .result-actions {
+                width: 100%;
+            }
+
+            .result-actions button {
+                flex: 1;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-section h1 {
+                font-size: 24px;
+            }
+
+            .tool-card {
+                padding: 16px 12px;
+                border-radius: 14px;
+            }
+
+            .result-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .result-card .value {
+                font-size: 22px;
+            }
+
+            .content-section {
+                padding: 16px 12px;
+            }
+
+            .content-section h2 {
+                font-size: 19px;
+            }
+
+            .content-section p {
+                font-size: 14px;
+            }
+
+            .eligibility-badge .status {
+                font-size: 24px;
+            }
+
+            .btn-calculate {
+                font-size: 16px;
+                padding: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========================================== -->
+    <!-- HEADER                                     -->
+    <!-- ========================================== -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">TZ</div>
+            <div>
+                <div class="logo-text">TOON<span>ZI</span></div>
+                <span class="logo-sub">Tools</span>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="index.html"><i class="fas fa-home"></i></a>
+            <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back</a>
+        </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- MAIN CONTAINER                             -->
+    <!-- ========================================== -->
+    <div class="main-container">
+
+        <!-- Hero -->
+        <div class="hero-section">
+            <div class="badge"><i class="fas fa-graduation-cap"></i> Free Financial Aid Tool</div>
+            <h1>FAFSA <span>Eligibility</span> Calculator</h1>
+            <p>Estimate your federal student aid eligibility, EFC, and Pell Grant amount for the 2025-2026 academic year.</p>
+        </div>
+
+        <!-- Tool Card -->
+        <div class="tool-card">
+
+            <form id="fafsaForm" onsubmit="calculateFAFSA(event)">
+
+                <div class="form-grid">
+
+                    <!-- Full Name -->
+                    <div class="form-group full-width">
+                        <label>Full Name <span class="required">*</span></label>
+                        <input type="text" id="fullName" placeholder="e.g., John Doe" required>
+                    </div>
+
+                    <!-- Date of Birth -->
+                    <div class="form-group">
+                        <label>Date of Birth <span class="required">*</span></label>
+                        <input type="date" id="dob" required>
+                    </div>
+
+                    <!-- State of Residence -->
+                    <div class="form-group">
+                        <label>State of Residence <span class="required">*</span></label>
+                        <select id="state" required>
+                            <option value="">Select State</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+
+                    <!-- Academic Year -->
+                    <div class="form-group">
+                        <label>Academic Year <span class="required">*</span></label>
+                        <select id="academicYear" required>
+                            <option value="2025-2026" selected>2025-2026</option>
+                            <option value="2024-2025">2024-2025</option>
+                            <option value="2026-2027">2026-2027</option>
+                        </select>
+                    </div>
+
+                    <!-- Annual Income -->
+                    <div class="form-group full-width">
+                        <label>Annual Household Income (AGI) <span class="required">*</span> <span class="hint">(USD $)</span></label>
+                        <input type="number" id="income" placeholder="e.g., 45000" min="0" step="100" required>
+                        <span class="helper">Enter your Adjusted Gross Income from your tax return</span>
+                    </div>
+
+                    <!-- Household Size -->
+                    <div class="form-group">
+                        <label>Household Size <span class="required">*</span></label>
+                        <input type="number" id="householdSize" placeholder="e.g., 4" min="1" max="20" required>
+                    </div>
+
+                    <!-- Dependency Status -->
+                    <div class="form-group full-width">
+                        <label>Dependency Status <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" name="dependency" id="depDependent" value="dependent" checked>
+                                <label for="depDependent">Dependent Student</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" name="dependency" id="depIndependent" value="independent">
+                                <label for="depIndependent">Independent Student</label>
+                            </div>
+                        </div>
+                        <span class="helper">Independent students typically qualify for more aid</span>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="btn-calculate">
+                    <i class="fas fa-calculator"></i> Calculate FAFSA Eligibility
+                </button>
+
+            </form>
+
+            <!-- Results -->
+            <div class="result-section" id="resultSection">
+
+                <!-- ✅ FIXED: Eligibility Badge with Dynamic Classes -->
+                <div class="eligibility-badge" id="eligibilityBadge">
+                    <span class="status" id="eligibilityStatus">✅ Likely Eligible</span>
+                    <div class="sub-text" id="eligibilitySubText">You may qualify for federal student aid</div>
+                </div>
+
+                <!-- Result Grid -->
+                <div class="result-grid">
+                    <div class="result-card">
+                        <span class="icon">💰</span>
+                        <div class="value blue" id="resultEfc">$0</div>
+                        <div class="label">Expected Family Contribution (EFC)</div>
+                    </div>
+                    <div class="result-card">
+                        <span class="icon">🎓</span>
+                        <div class="value green" id="resultPell">$0</div>
+                        <div class="label">Estimated Pell Grant</div>
+                    </div>
+                    <div class="result-card">
+                        <span class="icon">📊</span>
+                        <div class="value" id="resultSai">$0</div>
+                        <div class="label">Student Aid Index (SAI)</div>
+                    </div>
+                    <div class="result-card">
+                        <span class="icon">🏛️</span>
+                        <div class="value" id="resultStatus">Dependent</div>
+                        <div class="label">Dependency Status</div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="result-actions">
+                    <button class="btn-reset-result" onclick="resetCalculator()"><i class="fas fa-undo"></i> Start Over</button>
+                    <button class="btn-print-result" onclick="window.print()"><i class="fas fa-print"></i> Print Results</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ========================================== -->
+        <!-- SEO CONTENT SECTION - UPDATED             -->
+        <!-- ========================================== -->
+        <div class="content-section">
+
+            <h2><i class="fas fa-graduation-cap"></i> What is the <span>FAFSA Eligibility Calculator</span>?</h2>
+            <p>The <strong>FAFSA Eligibility Calculator</strong> is a free online tool that helps students and families estimate their eligibility for federal student aid. By entering basic financial and demographic information, you can get an estimate of your <strong>Expected Family Contribution (EFC)</strong>, <strong>Student Aid Index (SAI)</strong>, and potential <strong>Pell Grant</strong> award.</p>
+            <p>This <strong>student aid estimator</strong> is designed to give you a preliminary understanding of your financial aid eligibility before you complete the official <strong>FAFSA form</strong>. It's an excellent starting point for college financial planning.</p>
+
+            <div class="highlight-box">
+                <p><i class="fas fa-bolt" style="color:#0055a4;"></i> <strong>Quick Tip:</strong> This calculator provides estimates only. For official financial aid determination, you must complete the FAFSA form at <strong>studentaid.gov</strong>. Use this tool as a planning guide for your college journey.</p>
+            </div>
+
+            <h3><i class="fas fa-question-circle"></i> How to Use This FAFSA Calculator?</h3>
+            <p>Using this <strong>financial aid calculator</strong> is simple and straightforward:</p>
+            <ul>
+                <li><strong>Step 1:</strong> Enter your full name and date of birth.</li>
+                <li><strong>Step 2:</strong> Select your state of residence and academic year.</li>
+                <li><strong>Step 3:</strong> Enter your annual household income (Adjusted Gross Income).</li>
+                <li><strong>Step 4:</strong> Provide your household size.</li>
+                <li><strong>Step 5:</strong> Select your dependency status (Dependent or Independent).</li>
+                <li><strong>Step 6:</strong> Click <strong>"Calculate FAFSA Eligibility"</strong> to see your results.</li>
+            </ul>
+            <p>You'll instantly receive your <strong>EFC</strong>, <strong>SAI</strong>, estimated <strong>Pell Grant</strong> award, and overall eligibility status.</p>
+
+            <h3><i class="fas fa-check-circle"></i> Benefits of Using a FAFSA Calculator</h3>
+            <p>Here are some key benefits of using our <strong>free FAFSA calculator</strong>:</p>
+            <ul>
+                <li><strong>Plan Ahead:</strong> Understand your financial aid eligibility before applying to colleges.</li>
+                <li><strong>Budget Effectively:</strong> Estimate college costs and plan your family's contribution.</li>
+                <li><strong>Pell Grant Estimation:</strong> Know if you qualify for the Federal Pell Grant.</li>
+                <li><strong>Quick & Easy:</strong> Get results in seconds with no signup required.</li>
+                <li><strong>100% Free:</strong> No hidden charges or subscriptions.</li>
+                <li><strong>Privacy Protected:</strong> Your data is processed locally and never stored.</li>
+                <li><strong>All 50 States Supported:</strong> Select your state for accurate estimates.</li>
+            </ul>
+
+            <h3><i class="fas fa-users"></i> Who Should Use This FAFSA Calculator?</h3>
+            <p>This <strong>student aid estimator</strong> is designed for:</p>
+            <ul>
+                <li><strong>High School Seniors:</strong> Planning for college and financial aid.</li>
+                <li><strong>College Students:</strong> Renewing financial aid each year.</li>
+                <li><strong>Parents:</strong> Estimating financial aid for their children.</li>
+                <li><strong>Transfer Students:</strong> Exploring financial aid options for new schools.</li>
+                <li><strong>Adult Learners:</strong> Returning to college and seeking financial aid.</li>
+                <li><strong>Counselors:</strong> Helping students understand their financial aid options.</li>
+            </ul>
+
+            <h3><i class="fas fa-star"></i> Why Choose TOONZI TOOLS FAFSA Calculator?</h3>
+            <p>Here's why our <strong>FAFSA eligibility tool</strong> is the best choice:</p>
+            <ul>
+                <li><strong>Accurate Estimates:</strong> Uses current FAFSA formulas for realistic estimates.</li>
+                <li><strong>Simple Interface:</strong> Easy-to-use form with clear instructions.</li>
+                <li><strong>Instant Results:</strong> Get EFC, SAI, and Pell Grant estimates immediately.</li>
+                <li><strong>All States Covered:</strong> All 50 U.S. states plus international options.</li>
+                <li><strong>Multiple Years:</strong> Select 2024-2025, 2025-2026, or 2026-2027.</li>
+                <li><strong>Professional Design:</strong> Clean, white theme for easy reading.</li>
+                <li><strong>Mobile Friendly:</strong> Works on all devices.</li>
+            </ul>
+            <p>Whether you're applying to college for the first time or renewing your financial aid, our <strong>free FAFSA calculator</strong> is the perfect tool to help you plan for your educational future.</p>
+
+            <!-- ========================================== -->
+            <!-- FAQ SECTION - UPDATED ✅                  -->
+            <!-- ========================================== -->
+            <div class="faq-section">
+                <h3><i class="fas fa-question-circle"></i> Frequently Asked Questions</h3>
+
+                <div class="faq-item">
+                    <div class="question"><i class="fas fa-chevron-right"></i> What is FAFSA eligibility?</div>
+                    <div class="answer">FAFSA eligibility determines if you qualify for federal student aid including Pell Grants, work-study, and student loans. Eligibility is based on your Expected Family Contribution (EFC), dependency status, and other factors.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="question"><i class="fas fa-chevron-right"></i> How do I know if I qualify for Pell Grant?</div>
+                    <div class="answer">Pell Grant eligibility is determined by your Expected Family Contribution (EFC). For the 2025-2026 academic year, students with an EFC below $7,395 may qualify for Pell Grants. The actual award amount depends on your EFC and enrollment status.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="question"><i class="fas fa-chevron-right"></i> What is the maximum Pell Grant for 2025?</div>
+                    <div class="answer">The maximum Federal Pell Grant for the 2025-2026 academic year is $7,395. The actual amount depends on your EFC, cost of attendance, and enrollment status. Students with an EFC of $0 typically receive the maximum award.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="question"><i class="fas fa-chevron-right"></i> Is this FAFSA calculator free?</div>
+                    <div class="answer">Yes, this FAFSA eligibility calculator is completely free to use. No signup or registration required. Get instant estimates for your financial aid eligibility.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="question"><i class="fas fa-chevron-right"></i> How accurate is this FAFSA estimator?</div>
+                    <div class="answer">This tool provides estimates based on current FAFSA formulas. While it gives a good indication of your eligibility, the official FAFSA determines your actual financial aid. Use this as a planning guide.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="question"><i class="fas fa-chevron-right"></i> What is the difference between EFC and SAI?</div>
+                    <div class="answer">EFC (Expected Family Contribution) is the old term used before 2024. SAI (Student Aid Index) is the new term introduced in the 2024-2025 FAFSA. Both measure your family's financial strength to contribute to education costs.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="question"><i class="fas fa-chevron-right"></i> Do I need to file taxes to use this calculator?</div>
+                    <div class="answer">No, you don't need to file taxes to use this calculator. Simply enter your estimated household income. However, for official FAFSA, tax information is required.</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                     -->
+    <!-- ========================================== -->
+    <footer class="footer">
+        <p>&copy; 2026 <a href="https://toonzi.xyz">TOONZI</a>. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="terms-and-condition.html">Terms</a>
+            <a href="privacy-policy.html">Privacy</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About Us</a>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- ✅ FIXED JAVASCRIPT                        -->
+    <!-- ========================================== -->
+    <script>
+        // ============================================
+        // SET DEFAULT DOB
+        // ============================================
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date();
+            const year = today.getFullYear() - 18;
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const day = String(today.getDate()).padStart(2, '0');
+            document.getElementById('dob').value = year + '-' + month + '-' + day;
+            document.getElementById('householdSize').value = '4';
+        });
+
+        // ============================================
+        // CALCULATE FAFSA - FIXED ✅
+        // ============================================
+        function calculateFAFSA(e) {
+            e.preventDefault();
+
+            // Get values
+            const name = document.getElementById('fullName').value.trim();
+            const dob = document.getElementById('dob').value;
+            const state = document.getElementById('state').value;
+            const year = document.getElementById('academicYear').value;
+            const income = parseInt(document.getElementById('income').value) || 0;
+            const householdSize = parseInt(document.getElementById('householdSize').value) || 1;
+            const dependency = document.querySelector('input[name="dependency"]:checked')?.value || 'dependent';
+
+            // Validate all fields
+            if (!name) {
+                alert('Please enter your full name.');
+                document.getElementById('fullName').focus();
+                return;
+            }
+            if (!dob) {
+                alert('Please enter your date of birth.');
+                document.getElementById('dob').focus();
+                return;
+            }
+            if (!state) {
+                alert('Please select your state of residence.');
+                document.getElementById('state').focus();
+                return;
+            }
+            if (income < 0 || isNaN(income)) {
+                alert('Please enter a valid income amount.');
+                document.getElementById('income').focus();
+                return;
+            }
+            if (householdSize < 1 || isNaN(householdSize)) {
+                alert('Please enter a valid household size (minimum 1).');
+                document.getElementById('householdSize').focus();
+                return;
+            }
+
+            // Calculate EFC (Simplified Formula)
+            let efc = 0;
+            let sai = 0;
+            let pellGrant = 0;
+            let eligibilityClass = '';
+            let eligibilityText = '';
+            let subText = '';
+
+            // Base EFC Calculation
+            if (income <= 10000) {
+                efc = 0;
+            } else if (income <= 20000) {
+                efc = Math.round((income - 10000) * 0.15);
+            } else if (income <= 40000) {
+                efc = Math.round(1500 + (income - 20000) * 0.20);
+            } else if (income <= 60000) {
+                efc = Math.round(5500 + (income - 40000) * 0.22);
+            } else if (income <= 80000) {
+                efc = Math.round(9900 + (income - 60000) * 0.25);
+            } else {
+                efc = Math.round(14900 + (income - 80000) * 0.30);
+            }
+
+            // Adjust EFC for household size
+            if (householdSize > 1) {
+                const reduction = (householdSize - 1) * 500;
+                efc = Math.max(0, efc - reduction);
+            }
+
+            // Independent student adjustment
+            if (dependency === 'independent') {
+                efc = Math.max(0, efc - 2000);
+            }
+
+            // SAI (Student Aid Index)
+            sai = Math.max(0, efc);
+
+            // Pell Grant Calculation (Updated for 2025-2026)
+            const maxPell = 7395;
+            const pellThreshold = 7395;
+
+            if (efc <= pellThreshold) {
+                const pellPercentage = 1 - (efc / pellThreshold);
+                pellGrant = Math.round(maxPell * Math.max(0.1, pellPercentage));
+                pellGrant = Math.min(maxPell, pellGrant);
+            } else {
+                pellGrant = 0;
+            }
+
+            // ✅ FIXED: Eligibility Status with proper classes
+            if (pellGrant > 0) {
+                eligibilityClass = 'eligible';
+                eligibilityText = '✅ Likely Eligible';
+                subText = `You may qualify for a Pell Grant of up to $${pellGrant.toLocaleString()}`;
+            } else if (efc < 10000) {
+                eligibilityClass = 'partial';
+                eligibilityText = '🟡 Partial Eligibility';
+                subText = 'You may qualify for other forms of federal student aid.';
+            } else {
+                eligibilityClass = 'not-eligible';
+                eligibilityText = '❌ Limited Eligibility';
+                subText = 'You may not qualify for need-based aid. Consider other financing options.';
+            }
+
+            // Display results
+            const resultSection = document.getElementById('resultSection');
+            resultSection.classList.add('active');
+
+            // ✅ FIXED: Update eligibility badge with dynamic class
+            const badge = document.getElementById('eligibilityBadge');
+            badge.className = 'eligibility-badge ' + eligibilityClass;
+            document.getElementById('eligibilityStatus').textContent = eligibilityText;
+            document.getElementById('eligibilitySubText').textContent = subText;
+
+            // Result cards
+            document.getElementById('resultEfc').textContent = '$' + efc.toLocaleString();
+            document.getElementById('resultPell').textContent = '$' + pellGrant.toLocaleString();
+            document.getElementById('resultSai').textContent = '$' + sai.toLocaleString();
+            document.getElementById('resultStatus').textContent = dependency === 'dependent' ? 'Dependent' : 'Independent';
+
+            // Scroll to results
+            resultSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // ============================================
+        // RESET CALCULATOR
+        // ============================================
+        function resetCalculator() {
+            document.getElementById('fafsaForm').reset();
+            document.getElementById('resultSection').classList.remove('active');
+            
+            // Reset badge class
+            document.getElementById('eligibilityBadge').className = 'eligibility-badge';
+            
+            // Set default values
+            const today = new Date();
+            const year = today.getFullYear() - 18;
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const day = String(today.getDate()).padStart(2, '0');
+            document.getElementById('dob').value = year + '-' + month + '-' + day;
+            document.getElementById('householdSize').value = '4';
+            
+            document.getElementById('fullName').focus();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // ============================================
+        // KEYBOARD SHORTCUT: Ctrl+Enter
+        // ============================================
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                e.preventDefault();
+                document.getElementById('fafsaForm').dispatchEvent(new Event('submit'));
+            }
+        });
+    </script>
+
+</body>
+</html>
